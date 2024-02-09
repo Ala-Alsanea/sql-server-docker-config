@@ -1,0 +1,45 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2024-02-09 13:04 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000050s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE   VERSION
+1433/tcp open  ms-sql-s  Microsoft SQL Server  14.00.3465.00
+| ms-sql-ntlm-info: 
+|   Target_Name: sql-server-db
+|   NetBIOS_Domain_Name: sql-server-db
+|   NetBIOS_Computer_Name: sql-server-db
+|   DNS_Domain_Name: sql-server-db.DOMAIN
+|   DNS_Computer_Name: sql-server-db.DOMAIN
+|_  Product_Version: 10.0.17134
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2024-02-09T13:01:15
+|_Not valid after:  2054-02-09T13:01:15
+|_ssl-date: TLS randomness does not represent time
+1434/tcp open  ms-sql-m?
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.60%E=4%D=2/9%OT=1433%CT=1%CU=32165%PV=N%DS=0%DC=L%G=Y%TM=65C623
+OS:09%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=106%TI=Z%CI=Z%TS=A)OPS(O1=
+OS:MFFD7ST11NW7%O2=MFFD7ST11NW7%O3=MFFD7NNT11NW7%O4=MFFD7ST11NW7%O5=MFFD7ST
+OS:11NW7%O6=MFFD7ST11)WIN(W1=8200%W2=8200%W3=8200%W4=8200%W5=8200%W6=8200)E
+OS:CN(R=Y%DF=Y%T=40%W=8200%O=MFFD7NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%
+OS:F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T
+OS:5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=
+OS:Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF
+OS:=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40
+OS:%CD=S)
+
+Network Distance: 0 hops
+
+Host script results:
+| ms-sql-info: 
+|   127.0.0.1:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 
+|       number: 14.00.3465.00
+|       Product: Microsoft SQL Server 
+|_    TCP port: 1433
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 51.20 seconds
